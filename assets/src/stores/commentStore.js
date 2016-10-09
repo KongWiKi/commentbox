@@ -28,7 +28,7 @@ class CommentStore {
         this.comments = comments;
     }
 
-    @action	loadComments(sort='star', start=0, limit=20, callback=null, reset=false) {
+    @action loadComments(sort='star', start=0, limit=20, callback=null, reset=false) {
         this.pending = true;
         fetch(`/j/comments?sort=${sort}&start=${start}&limit=${limit}`)
             .then((response) => response.json())

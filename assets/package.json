@@ -1,14 +1,14 @@
 {
   "name": "assets",
   "version": "1.0.0",
-  "description": "Musicbox",
+  "description": "Commentbox",
   "main": "index.js",
   "scripts": {
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dongweiming/musicbox.git"
+    "url": "git+https://github.com/dongweiming/commentbox.git"
   },
   "keywords": [
     "react"
@@ -16,9 +16,9 @@
   "author": "Dongweiming",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dongweiming/musicbox/issues"
+    "url": "https://github.com/dongweiming/commentbox/issues"
   },
-  "homepage": "https://github.com/dongweiming/musicbox#readme",
+  "homepage": "https://github.com/dongweiming/commentbox",
   "dependencies": {
     "exports-loader": "^0.6.3",
     "imports-loader": "^0.6.5",
