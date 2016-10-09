@@ -1,15 +1,12 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {observer} from 'mobx-react';
-import RaisedButton from 'material-ui/RaisedButton';
 import Avatar from 'material-ui/Avatar';
 import ActionGrade from 'material-ui/svg-icons/action/grade';
 import {List, ListItem} from 'material-ui/List';
-import withWidth, {LARGE} from 'material-ui/utils/withWidth';
+import withWidth from 'material-ui/utils/withWidth';
 import spacing from 'material-ui/styles/spacing';
-import typography from 'material-ui/styles/typography';
-import lightBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
-import {cyan500, grey200, pinkA200, darkWhite} from 'material-ui/styles/colors';
+import {cyan500, pinkA200} from 'material-ui/styles/colors';
 
 import CommentList from './CommentList';
 import commentStore from '../stores/commentStore';

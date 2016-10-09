@@ -141,7 +141,6 @@ class Master extends Component {
       prepareStyles,
     } = this.state.muiTheme;
 
-    const router = this.context.router;
     const styles = this.getStyles();
     const title = '';
 

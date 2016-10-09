@@ -39,7 +39,7 @@ if (module.hot) {
             history={hashHistory}
             onUpdate={() => window.scrollTo(0, 0)}
           >
-            {AppRoutes}
+            {NextAppRoutes}
           </Router>
         </Provider>
       </AppContainer>,

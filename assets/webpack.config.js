@@ -34,7 +34,7 @@ module.exports = {
     module: {
         preLoaders: [
             {
-                test: /\.es6?$/,
+                test: /(\.es6|\.js|\.jsx)$/,
                 exclude: /node_modules/,
                 loader: 'eslint'
             }

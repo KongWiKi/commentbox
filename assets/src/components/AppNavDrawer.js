@@ -3,9 +3,6 @@ import {observer} from 'mobx-react';
 import Drawer from 'material-ui/Drawer';
 import {List, ListItem, MakeSelectable} from 'material-ui/List';
 import Divider from 'material-ui/Divider';
-import Subheader from 'material-ui/Subheader';
-import DropDownMenu from 'material-ui/DropDownMenu';
-import MenuItem from 'material-ui/MenuItem';
 import {spacing, typography, zIndex} from 'material-ui/styles';
 import {cyan500} from 'material-ui/styles/colors';
 import Toggle from 'material-ui/Toggle';
@@ -33,8 +30,6 @@ const styles = {
 class AppNavDrawer extends Component {
   static propTypes = {
     docked: PropTypes.bool.isRequired,
-    location: PropTypes.object.isRequired,
-    onChangeList: PropTypes.func.isRequired,
     onRequestChangeNavDrawer: PropTypes.func.isRequired,
     open: PropTypes.bool.isRequired,
     style: PropTypes.object,
@@ -58,10 +53,8 @@ class AppNavDrawer extends Component {
 
   render() {
     const {
-      location,
       docked,
       onRequestChangeNavDrawer,
-      onChangeList,
       open,
       style,
     } = this.props;

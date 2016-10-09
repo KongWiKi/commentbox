@@ -1,4 +1,4 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 import {observer} from 'mobx-react';
 import DevTools from 'mobx-react-devtools';
 import {List, ListItem} from 'material-ui/List';
@@ -6,13 +6,11 @@ import {Card, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card
 import CircularProgress from 'material-ui/CircularProgress';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import NavigationRefresh from 'material-ui/svg-icons/navigation/refresh';
-import spacing from 'material-ui/styles/spacing';
 import Divider from 'material-ui/Divider';
 import Subheader from 'material-ui/Subheader';
 import Avatar from 'material-ui/Avatar';
-import {grey400, darkBlack, lightBlack} from 'material-ui/styles/colors';
-import MenuItem from 'material-ui/MenuItem';
-import withWidth, {LARGE} from 'material-ui/utils/withWidth';
+import {darkBlack} from 'material-ui/styles/colors';
+import withWidth from 'material-ui/utils/withWidth';
 
 import {MEDIUMWIDTH} from './utils';
 
@@ -56,7 +54,7 @@ class Comment extends Component {
 class CommentCard extends Component {
 
   render() {
-    const {user, song, content, artist} = this.props.comment;
+    const {user, content, artist} = this.props.comment;
     return (
       <div>
         <Card>
