@@ -21,7 +21,7 @@ var plugins = [
 module.exports = {
     devtool: "cheap-module-source-map",
     entry: {
-	index: ['./src/index'],
+        index: ['./src/index'],
     },
     output: {
         path: path.join(output, publicPath),

@@ -1,8 +1,7 @@
 var colors = require('colors');
 var webpack = require('webpack');
 var WebpackDevServer = require('webpack-dev-server');
-var bodyParser = require('body-parser');
-var httpProxyMiddleware = require("http-proxy-middleware");
+var httpProxyMiddleware = require('http-proxy-middleware');
 var config = require('./webpack.config.js');
 
 config.debug = true;
@@ -44,9 +43,6 @@ app.use(require('webpack-hot-middleware')(compiler, {
 app.use(httpProxyMiddleware('/', {
     target: 'http://localhost:8100/'
 }));
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 app.listen(3000, '0.0.0.0', function(err) {
     if (err) {
